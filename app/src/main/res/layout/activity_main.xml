@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnParser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解析XML"/>
+
+    <Button
+        android:id="@+id/btnHandler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Handler"/>
+
+    <Button
+        android:id="@+id/btnFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件I/O"/>
+
+    <Button
+        android:id="@+id/btnThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多线程"/>
+
+    <Button
+        android:id="@+id/btnProduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生产者-消费者"/>
+
+    <Button
+        android:id="@+id/btnCallback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="回调"/>
+
+    <Button
+        android:id="@+id/btnNesting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="嵌套"/>
+
+    <Button
+        android:id="@+id/btnKeyEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KeyEvent"/>
+
+</LinearLayout>
