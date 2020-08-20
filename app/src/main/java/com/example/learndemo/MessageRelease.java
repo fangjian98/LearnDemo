@@ -25,7 +25,7 @@ public class MessageRelease {
         parser.setInput(in, "utf-8");
         // 【3】获取事件类型
         //int type = parser.getEventType();这行代码在其他很多人的代码中都有，但是这里其实将type写死了（即type是一个常量），导致在后面的循环当中无限循环
-        //在这个while循环中，将数据封装成Message的对象存到集合msgList当中
+        //在这个while循环中，将数getId据封装成Message的对象存到集合msgList当中
         //while (type !=XmlPullParser.END_DOCUMENT) {
         while (parser.getEventType()!=XmlPullParser.END_DOCUMENT) {
             //xml可能因为格式不规范出现parser读一行为null的情况

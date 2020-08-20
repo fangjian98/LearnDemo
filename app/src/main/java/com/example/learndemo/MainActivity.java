@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button mBtnMenu;
     private Button mBtnParser;
     private Button mBtnHandler;
     private Button mBtnFile;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        mBtnMenu=findViewById(R.id.btnMenu);
         mBtnParser = findViewById(R.id.btnParser);
         mBtnHandler=findViewById(R.id.btnHandler);
         mBtnFile = findViewById(R.id.btnFile);
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnNesting = findViewById(R.id.btnNesting);
         mBtnKeyevent = findViewById(R.id.btnKeyEvent);
 
+        mBtnMenu.setOnClickListener(onClick);
         mBtnParser.setOnClickListener(onClick);
         mBtnHandler.setOnClickListener(onClick);
         mBtnFile.setOnClickListener(onClick);
@@ -50,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
+                case R.id.btnMenu:
+                    startActivity(new Intent(MainActivity.this, PersonActivity.class));
+                    break;
                 case R.id.btnParser:
                     startActivity(new Intent(MainActivity.this, ParserActivity.class));
                     break;

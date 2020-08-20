@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persons>
+    <person id="1">
+        <name>马云</name>
+        <age>五十六</age>
+        <sex>男</sex>
+    </person>
+    <person id="2">
+        <name>马化腾</name>
+        <age>四十九</age>
+        <sex>男</sex>
+    </person>
+</persons>

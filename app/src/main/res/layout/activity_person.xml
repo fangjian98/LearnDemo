@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PersonActivity">
+
+    <Button
+        android:id="@+id/btnSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="切换"/>
+
+    <TextView
+        android:id="@+id/tvPerson"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="#eeeeee"
+        android:text="hh"/>
+
+    <!--<TextView
+        android:id="@+id/tvAge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="#eeeeee"
+        android:text="hh"/>
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="#eeeeee"
+        android:text="hh"/>-->
+
+</LinearLayout>

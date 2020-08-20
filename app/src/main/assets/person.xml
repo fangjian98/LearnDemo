@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persons>
+    <person id="0">
+        <name>马云</name>
+        <age>五十六</age>
+        <sex>男</sex>
+    </person>
+    <person id="1">
+        <name>Jack Ma</name>
+        <age>56</age>
+        <sex>male</sex>
+    </person>
+</persons>
