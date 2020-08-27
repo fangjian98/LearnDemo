@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    private Button mBtnSetting;
     private Button mBtnMenu;
     private Button mBtnParser;
     private Button mBtnHandler;
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        mBtnSetting=findViewById(R.id.btnSetting);
         mBtnMenu=findViewById(R.id.btnMenu);
         mBtnParser = findViewById(R.id.btnParser);
         mBtnHandler=findViewById(R.id.btnHandler);
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnNesting = findViewById(R.id.btnNesting);
         mBtnKeyevent = findViewById(R.id.btnKeyEvent);
 
+        mBtnSetting.setOnClickListener(onClick);
         mBtnMenu.setOnClickListener(onClick);
         mBtnParser.setOnClickListener(onClick);
         mBtnHandler.setOnClickListener(onClick);
@@ -53,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
+                case R.id.btnSetting:
+                    startActivity(new Intent(MainActivity.this, SettingActivity.class));
+                    break;
                 case R.id.btnMenu:
                     startActivity(new Intent(MainActivity.this, PersonActivity.class));
                     break;

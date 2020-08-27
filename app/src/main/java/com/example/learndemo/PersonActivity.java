@@ -28,8 +28,8 @@ public class PersonActivity extends AppCompatActivity {
 
         mSwitch=findViewById(R.id.btnSwitch);
         mPerson=findViewById(R.id.tvPerson);
-        /*mAge=findViewById(R.id.tvAge);
-        mSex=findViewById(R.id.tvSex);*/
+        mAge=findViewById(R.id.tvAge);
+//        mSex=findViewById(R.id.tvSex);
 
         show(Flag);
 
@@ -65,6 +65,7 @@ public class PersonActivity extends AppCompatActivity {
             }
             mSwitch.setText(mText);
             mPerson.setText(sb.toString());
+            mAge.setText(sb.toString());
 
         } catch (Exception e) {
             e.printStackTrace();
